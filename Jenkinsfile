@@ -36,7 +36,7 @@ pipeline{
                 branch 'master'
             }
             steps {
-                buil job: 'deploy-app', parameters: [string(name: 'ARTIFACT_ID', value: "${env.ARTIFACT_ID}")], wait: false
+                build job: 'deploy-app', parameters: [string(name: 'ARTIFACT_ID', value: "${env.ARTIFACT_ID}")], wait: false
             }
         }
     }
