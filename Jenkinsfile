@@ -5,7 +5,7 @@ pipeline{
     }
     environment{
         ARTIFACT_ID = "desarroyo/app:${env.BUILD_NUMBER}"
-    }git
+    }
     stages {
         stage('Build') {
             steps {
