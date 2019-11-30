@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test-cov": "istanbul cover sum.js"
   },
   "directories": {
     "test": "test"
   },
   "dependencies": {
+    "istanbul": "^0.4.5",
     "koa": "^2.6.2",
     "koa-router": "^7.4.0"
   },
