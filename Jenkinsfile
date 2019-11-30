@@ -3,11 +3,9 @@ pipeline{
     options{
         timeout(time: 2, unit: 'MINUTES')
     }
-
-    enviroment{
+    environment{
         ARTIFACT_ID = "desarroyo/app:${env.BUILD_NUMBER}"
     }
-
     stages {
         stage('Build') {
             steps {
